@@ -1,6 +1,6 @@
 variable "token" {
   type = string
-  default = "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"
+  default = "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ghsufghsdV"
   sensitive = true
 }
 variable "repositoty_name" {
