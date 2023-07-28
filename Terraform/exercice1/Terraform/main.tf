@@ -6,6 +6,13 @@ terraform {
   }
 }
 
-provider "kubernetes" {
-	config_path    = "~/.kube/config"
+module "docker" {
+source = "./modules/docker"
 }
+module "kubernetes" {
+  source = "./modules/terraform"
+}
+
+
+
+

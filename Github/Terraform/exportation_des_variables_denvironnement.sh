@@ -1,0 +1,4 @@
+!/bin/bash
+export TF_VAR_token= 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
+#export TF_VAR_owner_name=ngueagho
+

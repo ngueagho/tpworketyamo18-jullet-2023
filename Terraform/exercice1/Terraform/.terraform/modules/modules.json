@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"docker","Source":"./modules/docker","Dir":"modules/docker"},{"Key":"kubernetes","Source":"./modules/terraform","Dir":"modules/terraform"}]}

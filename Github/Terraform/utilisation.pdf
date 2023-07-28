@@ -1,0 +1,7 @@
+pour l'utilisation de ce module vu que les le token github et la nom d'utilisatuuer sont variabilise il
+faut exporter les variables d'environement token et owner name , ceci grace aux commandes:
+
+1 -export TF_VAR_token= votre-token-github
+2 -export TF_VAR_owner_name= votre-username-github
+
+
