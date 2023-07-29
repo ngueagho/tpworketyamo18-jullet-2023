@@ -43,4 +43,5 @@ terraform {
 	}
 
 
-6- 
+6- ok
+7- ok

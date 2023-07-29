@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"kubernetes-ssh","Source":"./modules/kubernetes-ssh","Dir":"modules/kubernetes-ssh"},{"Key":"nodeportservice","Source":"./modules/nodeportservice","Dir":"modules/nodeportservice"}]}
