@@ -12,10 +12,12 @@ resource "kubernetes_pod" "roberto_service_pod" {
 	  username =var.podsinfos[count.index].username
 	}
   }
+  
 	spec {
 		container {
 		  name = var.podsinfos[count.index].container_name
 		  image = var.podsinfos[count.index].image_name
 		}
+		node_name = "master"
 	}
 }

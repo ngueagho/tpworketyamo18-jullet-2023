@@ -1,14 +1,16 @@
 provider "kubernetes" {
   config_path = "~/.kube/config"
 }
-/* 
+
 resource "kubernetes_service" "nodeport" {
   count = length(var.infos_service)
+ /* depends_on = [ kubernetes_pod.roberto_service_pod] */
   metadata {
-    name ="node-port-service"
+    name ="roberto-node-port-service-${count.index}"
     namespace = "rashid"
   }
   spec {
+    type = "NodePort"
     selector = {
         id =var.infos_service[count.index].id
     }
@@ -19,8 +21,8 @@ resource "kubernetes_service" "nodeport" {
       target_port = var.infos_service[count.index].target_port
     }
   }
-} */
-resource "kubernetes_service" "example" {
+}
+/* resource "kubernetes_service" "example" {
   metadata {
     name = "terraform-example1"
     namespace = "rashid"
@@ -55,4 +57,4 @@ resource "kubernetes_pod" "example" {
       name  = "example"
     }
   }
-}
+} */

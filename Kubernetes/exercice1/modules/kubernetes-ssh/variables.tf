@@ -22,7 +22,7 @@ variable "podsinfos" {
   },
   {
     pod_name = "roberto_tp_pod-b"
-    id= 2
+    id= 1
     username = "user1"
     image_name = "robertolandry/tp18juillet2023-httpd-port8000"
     container_name ="roberto-httpd8000"
@@ -30,7 +30,7 @@ variable "podsinfos" {
   },
   {
     pod_name = "roberto_tp_pod-b"
-    id= 3
+    id= 1
     username = "user2"
     image_name = "robertolandry/hellouser"
     container_name ="roberto-ssh-hellouser"
